@@ -1,6 +1,0 @@
-{
-  "*.ts": [
-    "npx eslint 'src/**' --fix",
-    "git add"
-  ]
-}
