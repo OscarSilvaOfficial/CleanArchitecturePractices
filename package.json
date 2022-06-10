@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register src/main/index.ts",
     "build": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "prepare": "husky install",
     "test": "jest"
   },
   "dependencies": {},
@@ -19,6 +20,8 @@
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.1",
     "prettier": "^2.3.2",
     "ts-jest": "^27.0.3",
     "ts-loader": "^9.2.3",
