@@ -8,8 +8,8 @@
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register src/main/index.ts",
     "build": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
-    "husky-scripts": "husky add .config/husky/pre-push 'npm run test' && husky add .config/husky/pre-commit 'npx lint-staged'",
-    "prepare": "husky install .config/husky && npm run husky-scripts",
+    "husky-scripts": "husky add .husky/pre-push 'npm run test' && husky add .husky/pre-commit 'npx lint-staged'",
+    "prepare": "husky install .husky && npm run husky-scripts",
     "test": "jest"
   },
   "dependencies": {},
